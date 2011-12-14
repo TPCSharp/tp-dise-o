@@ -1,0 +1,10 @@
+D:\Mis Documentos\UTN\DISEÑO DE SISTEMAS\TP2011\Prueba\Entidades\Entidades\bin\Debug\Entidades.dll
+D:\Mis Documentos\UTN\DISEÑO DE SISTEMAS\TP2011\Prueba\Entidades\Entidades\bin\Debug\Entidades.pdb
+D:\Mis Documentos\UTN\DISEÑO DE SISTEMAS\TP2011\Prueba\Entidades\Entidades\obj\Debug\ResolveAssemblyReference.cache
+D:\Mis Documentos\UTN\DISEÑO DE SISTEMAS\TP2011\Prueba\Entidades\Entidades\obj\Debug\Entidades.dll
+D:\Mis Documentos\UTN\DISEÑO DE SISTEMAS\TP2011\Prueba\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\bin\Debug\Entidades.dll
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\bin\Debug\Entidades.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\obj\Debug\Entidades.dll
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\obj\Debug\Entidades.pdb

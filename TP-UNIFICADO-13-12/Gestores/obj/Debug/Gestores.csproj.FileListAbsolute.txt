@@ -1,0 +1,14 @@
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\bin\Debug\Gestores.dll
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\bin\Debug\Gestores.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\bin\Debug\Entidades.dll
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\bin\Debug\Entidades.pdb
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\obj\Debug\Gestores.dll
+C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Gestores\obj\Debug\Gestores.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\bin\Debug\Gestores.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\bin\Debug\Gestores.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\bin\Debug\Entidades.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\bin\Debug\Entidades.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\obj\Debug\Gestores.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\obj\Debug\Gestores.pdb
