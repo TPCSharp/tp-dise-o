@@ -38,11 +38,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Entidades\bin\Debug\Entidades.dll</HintPath>
     </Reference>
-    <Reference Include="Gestores">
+    <Reference Include="Gestores, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Gestores\bin\Debug\Gestores.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
@@ -56,7 +58,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Validacion">
-      <HintPath>..\..\Validacion\Validacion\bin\Debug\Validacion.dll</HintPath>
+      <HintPath>..\Validacion\bin\Debug\Validacion.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

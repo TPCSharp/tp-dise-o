@@ -122,9 +122,9 @@
             this.SeleccionDeAcceso.Controls.Add(this.label2);
             this.SeleccionDeAcceso.Controls.Add(this.label1);
             this.SeleccionDeAcceso.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.SeleccionDeAcceso.Location = new System.Drawing.Point(238, 108);
+            this.SeleccionDeAcceso.Location = new System.Drawing.Point(172, 108);
             this.SeleccionDeAcceso.Name = "SeleccionDeAcceso";
-            this.SeleccionDeAcceso.Size = new System.Drawing.Size(434, 473);
+            this.SeleccionDeAcceso.Size = new System.Drawing.Size(500, 473);
             this.SeleccionDeAcceso.TabIndex = 9;
             this.SeleccionDeAcceso.TabStop = false;
             this.SeleccionDeAcceso.Text = "Ingrese los datos del puesto que desea dar de alta";
@@ -133,7 +133,7 @@
             // 
             this.labelPond.AutoSize = true;
             this.labelPond.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelPond.Location = new System.Drawing.Point(222, 354);
+            this.labelPond.Location = new System.Drawing.Point(313, 354);
             this.labelPond.Name = "labelPond";
             this.labelPond.Size = new System.Drawing.Size(67, 13);
             this.labelPond.TabIndex = 13;
@@ -143,7 +143,7 @@
             // 
             this.labelComp.AutoSize = true;
             this.labelComp.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelComp.Location = new System.Drawing.Point(88, 354);
+            this.labelComp.Location = new System.Drawing.Point(47, 354);
             this.labelComp.Name = "labelComp";
             this.labelComp.Size = new System.Drawing.Size(69, 13);
             this.labelComp.TabIndex = 12;
@@ -153,7 +153,7 @@
             // 
             this.Quitar.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
             this.Quitar.ForeColor = System.Drawing.Color.Red;
-            this.Quitar.Location = new System.Drawing.Point(343, 310);
+            this.Quitar.Location = new System.Drawing.Point(437, 310);
             this.Quitar.Name = "Quitar";
             this.Quitar.Size = new System.Drawing.Size(37, 33);
             this.Quitar.TabIndex = 11;
@@ -165,7 +165,7 @@
             // 
             this.Agregar.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
             this.Agregar.ForeColor = System.Drawing.Color.Green;
-            this.Agregar.Location = new System.Drawing.Point(300, 310);
+            this.Agregar.Location = new System.Drawing.Point(394, 310);
             this.Agregar.Name = "Agregar";
             this.Agregar.Size = new System.Drawing.Size(37, 33);
             this.Agregar.TabIndex = 10;
@@ -176,9 +176,9 @@
             // panelCaracteristicas
             // 
             this.panelCaracteristicas.AutoScroll = true;
-            this.panelCaracteristicas.Location = new System.Drawing.Point(74, 370);
+            this.panelCaracteristicas.Location = new System.Drawing.Point(38, 370);
             this.panelCaracteristicas.Name = "panelCaracteristicas";
-            this.panelCaracteristicas.Size = new System.Drawing.Size(296, 88);
+            this.panelCaracteristicas.Size = new System.Drawing.Size(436, 88);
             this.panelCaracteristicas.TabIndex = 9;
             // 
             // label5
@@ -317,6 +317,7 @@
             // 
             // Aceptar
             // 
+            this.Aceptar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aceptar.Location = new System.Drawing.Point(329, 587);
             this.Aceptar.Name = "Aceptar";
             this.Aceptar.Size = new System.Drawing.Size(75, 23);
@@ -326,6 +327,7 @@
             // 
             // Cancelar
             // 
+            this.Cancelar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Cancelar.Location = new System.Drawing.Point(514, 587);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(75, 23);

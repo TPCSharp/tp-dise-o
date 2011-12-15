@@ -6,55 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using Entidades;
 
 namespace TpDiseñoCSharp
 {
     public partial class PantallaPrincipal : Form
     {
+
         public PantallaPrincipal()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Fecha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void PanelSuperior_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void SeleccionDeAcceso_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void PanelInferior_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void LoginConsultor_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginConsultor logCons= new LoginConsultor(this);
+            LoginConsultor logCons= new LoginConsultor();
             logCons.ShowDialog();
 
         }

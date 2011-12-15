@@ -17,7 +17,7 @@ namespace Gestores
             ArrayList retornoBD = admBD.recuperarCompetencias();
             List<Competencia> listaCompetencias = new List<Competencia>();
 
-            for (int i = 0; i <= retornoBD.Count; i++)
+            for (int i = 0; i < retornoBD.Count; i++)
             {
                 Competencia nuevaCompetencia = (Competencia)retornoBD[i]; 
                 listaCompetencias.Add(nuevaCompetencia);

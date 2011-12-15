@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1D5226A2-B864-47E0-B26A-52C8A3E5C2D3}</ProjectGuid>
+    <ProjectGuid>{91487EFE-0FA0-467E-8F26-40023B1A190C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gestores</RootNamespace>
-    <AssemblyName>Gestores</AssemblyName>
+    <RootNamespace>Validacion</RootNamespace>
+    <AssemblyName>Validacion</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,13 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Entidades\bin\Debug\Entidades.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,14 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestorCandidatos.cs" />
-    <Compile Include="GestorCompetencias.cs" />
-    <Compile Include="GestorCuestionario.cs" />
-    <Compile Include="GestorEvaluacion.cs" />
-    <Compile Include="GestorFactores.cs" />
-    <Compile Include="GestorOpRespuesta.cs" />
-    <Compile Include="GestorPreguntas.cs" />
-    <Compile Include="GestorPuesto.cs" />
+    <Compile Include="Validar Alphanum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

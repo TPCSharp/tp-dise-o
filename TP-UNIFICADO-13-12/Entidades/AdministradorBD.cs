@@ -40,21 +40,57 @@ namespace Entidades
                 ObjConexion.Close();
         }
 
-        public ArrayList recuperarPuestos(string codigo = null, string nombre = null, string empresa = null)
+
+
+        /*
+        * ===================================================
+        * FUNCION ENCARGADA DE RECUPERAR LOS PUESTOS
+        * ==================================================
+        */
+        public ArrayList recuperarPuestos(string codigo = null, string nombreDePuesto = null, string empresa = null)
         {
-            ArrayList retornoBD = new ArrayList();
+            bool conexionExitosa;
+       
+            string consultaSql = "SELECT * FROM puesto WHERE `codigo` = '" +codigo+ "' AND `nombreDePuesto` = '"
+                +nombreDePuesto+ "' AND `empresa` = '" +empresa+ "';";
 
-            
+            conexionExitosa = iniciarConexion();
 
-            return retornoBD;
+            if (!conexionExitosa)
+            {
+                return null;
+            }
+
+            MySql.Data.MySqlClient.MySqlCommand comando;
+
+            comando = ObjConexion.CreateCommand();
+
+            comando.CommandText = consultaSql;
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            ArrayList listaDePuestos = new ArrayList();
+
+            while (reader.Read())
+            {
+                string cod =reader["codigo"].ToString();
+                string nomPuesto = reader["nombreDePuesto"].ToString();
+                string emp = reader["empresa"].ToString();
+
+                Puesto objPuesto = new Puesto(cod, nomPuesto, emp);
+                listaDePuestos.Add(objPuesto);
+            }
+            terminarConexion();
+            return listaDePuestos;
         }
 
-        
+
         public ArrayList recuperarCandidato(string TipoDoc, int NroDoc)
         {
             bool conexionExitosa;
             
-            string consultaSql = "SELECT * FROM candidato WHERE  `nro documento` = '"+NroDoc+"' AND `tipo documento` = '"+TipoDoc+"';";
+            string consultaSql = "SELECT * FROM candidato WHERE  `nro documento` = '"+NroDoc+"' AND `tipo documento` = '"
+                +TipoDoc+"';";
             
             conexionExitosa = iniciarConexion();
             
@@ -92,9 +128,6 @@ namespace Entidades
                 Candidato objCandidato = new Candidato(nom, ape, tipoDoc, nroDoc, nroCandidato, nroEmpleado);
                 listaCandidatos.Add(objCandidato);
              }
-
-
-
 
             terminarConexion();
 
@@ -179,9 +212,6 @@ namespace Entidades
             {
                 consultaSql2 += "`tipo documento` = '" + TipoDoc + "';";
             }
-
-            
-
             ArrayList retornoBD = new ArrayList();
             return retornoBD;
         }
@@ -193,11 +223,52 @@ namespace Entidades
             return retornoBD;
         }
 
+
+   
         public ArrayList recuperarCompetencias()
         {
-            ArrayList retornoBD = new ArrayList();
-            return retornoBD;
+            bool conexionExitosa;
+
+            string consultaSql = "SELECT * FROM competencia;";
+
+            conexionExitosa = iniciarConexion();
+
+            if (!conexionExitosa)
+                return null;
+
+
+            MySql.Data.MySqlClient.MySqlCommand comando;
+            
+            comando = ObjConexion.CreateCommand();
+            
+            comando.CommandText = consultaSql;
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            
+            ArrayList listaDeCompetencias = new ArrayList();
+
+            while (reader.Read())
+            {
+                
+                string cod = reader["codigo"].ToString();
+                string nomComp = reader["nombre"].ToString();
+                string descrip = reader["descripcion"].ToString();
+
+                Competencia elemento = new Competencia(cod, nomComp, descrip);
+                listaDeCompetencias.Add(elemento);    
+
+            }
+            
+            return listaDeCompetencias;
         }
+
+
+
+
+
+
+
 
         //Metodos de resguardo de clases
         public void guardarPuesto(Puesto puesto) { }
@@ -250,5 +321,90 @@ namespace Entidades
             return retornoBD;
         }
 
+        /*
+        public List<Factor> recuperarFactores(string codigoDeCompetencia)
+        {
+            bool conexionExitosa;
+
+            string consultaSql = "SELECT * FROM factor WHERE `Competencia_codigo` = '" + codigoDeCompetencia + "';";
+
+            conexionExitosa = iniciarConexion();
+
+            if (!conexionExitosa)
+                return null;
+
+
+            MySql.Data.MySqlClient.MySqlCommand comando;
+
+            comando = ObjConexion.CreateCommand();
+
+            comando.CommandText = consultaSql;
+
+            MySqlDataReader reader = comando.ExecuteReader();
+
+            List<Factor> listaDeFactores;
+
+            while (reader.Read())
+            {
+                int codigo;
+                string nombre;
+                string descripcion;
+                int nro_orden;
+                private List<Pregunta> listaPreguntas;
+
+            }
+
+            return listaDeFactores;
+        }*/
+
+
+        /*
+        public List<Pregunta> recuperarPreguntas()
+        {
+
+        }
+        */
+        /*
+        public List<Opciones> recuperarOpciones()
+        {
+            bool conexionExitosa;
+
+            string consultaSql1 = "SELECT * FROM opciones;";
+            string consultaSql2 = "SELECT * FROM pregunta_opciones WHERE `ponderacion`;";
+
+            conexionExitosa = iniciarConexion();
+
+            if (!conexionExitosa)
+                return null;
+
+
+            MySql.Data.MySqlClient.MySqlCommand comando1;
+            MySql.Data.MySqlClient.MySqlCommand comando2;
+
+            comando1 = ObjConexion.CreateCommand();
+            comando2 = ObjConexion.CreateCommand();
+
+            comando1.CommandText = consultaSql1;
+            comando2.CommandText = consultaSql2;
+
+            List<Opciones> listaDeOpciones = new List<Opciones>();
+            MySqlDataReader reader1 = comando1.ExecuteReader();
+            ArrayList nombreDeOpciones = new ArrayList();
+            while (reader1.Read())
+            {
+                string nom = reader1["nombre"].ToString();
+                nombreDeOpciones.Add(nom);
+            }
+
+            MySqlDataReader reader2 = comando1.ExecuteReader();
+            while (reader2.Read())
+            {
+                string pond = reader2["ponderacion"].ToString();*/
+
+
+        public string retornarCuestionarioInstrucciones()
+        {
+            return "ACA VA EL RETORNO DE LAS INSTRUCCIONES DEL CUESTIONARIO";
+        }
     }
 }

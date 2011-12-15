@@ -53,7 +53,7 @@ namespace TpDiseñoCSharp
             this.Fecha.DisabledLinkColor = System.Drawing.Color.Black;
             this.Fecha.Name = "Fecha";
             this.Fecha.TabStop = true;
-            this.Fecha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Fecha_LinkClicked);
+
             // 
             // TituloEmpresa
             // 
@@ -66,7 +66,7 @@ namespace TpDiseñoCSharp
             this.PanelSuperior.Controls.Add(this.TituloEmpresa);
             resources.ApplyResources(this.PanelSuperior, "PanelSuperior");
             this.PanelSuperior.Name = "PanelSuperior";
-            this.PanelSuperior.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelSuperior_Paint);
+
             // 
             // PanelInferior
             // 
@@ -74,19 +74,19 @@ namespace TpDiseñoCSharp
             this.PanelInferior.Controls.Add(this.Fecha);
             resources.ApplyResources(this.PanelInferior, "PanelInferior");
             this.PanelInferior.Name = "PanelInferior";
-            this.PanelInferior.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelInferior_Paint);
+      
             // 
             // panel1
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+  
             // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+ 
             // 
             // SeleccionDeAcceso
             // 
@@ -96,7 +96,7 @@ namespace TpDiseñoCSharp
             this.SeleccionDeAcceso.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.SeleccionDeAcceso.Name = "SeleccionDeAcceso";
             this.SeleccionDeAcceso.TabStop = false;
-            this.SeleccionDeAcceso.Enter += new System.EventHandler(this.SeleccionDeAcceso_Enter);
+
             // 
             // LoginCandidato
             // 
@@ -125,7 +125,7 @@ namespace TpDiseñoCSharp
             this.Controls.Add(this.PanelInferior);
             this.Controls.Add(this.PanelSuperior);
             this.Name = "PantallaPrincipal";
-            this.Load += new System.EventHandler(this.Form1_Load);
+
             this.PanelSuperior.ResumeLayout(false);
             this.PanelSuperior.PerformLayout();
             this.PanelInferior.ResumeLayout(false);

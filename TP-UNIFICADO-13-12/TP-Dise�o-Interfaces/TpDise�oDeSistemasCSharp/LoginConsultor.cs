@@ -13,25 +13,23 @@ namespace TpDiseñoCSharp
 {
     public partial class LoginConsultor : Form
     {
-        PantallaPrincipal pantallaPrincipal;
-        public LoginConsultor(PantallaPrincipal programa)
+        public LoginConsultor()
         {
             InitializeComponent();
-            pantallaPrincipal = programa;
       
         }
 
         private void Entrar_Click(object sender, EventArgs e)
         {
-            if (!validarAlphanum.validarCamposAlfanum(Usuario.Text))
+            /*if (!validarAlphanum.validarCamposAlfanum(Usuario.Text))
             {
                 if (!validarAlphanum.validarCamposAlfanum(Contraseña.Text))
                 {
                     if (Contraseña.Text.Length > 7)
-                    {
+                    {*/
                         MenuPrincipalConsultor menuConsultor = new MenuPrincipalConsultor(Usuario.Text);
                         menuConsultor.ShowDialog();
-                    }
+                   /* }
                     else
                     {
                         MessageBox.Show("La contraseña debe ser de 8 caracteres como mínimo", "Atención",
@@ -56,13 +54,13 @@ namespace TpDiseñoCSharp
                 limpiarTextBoxFormulario(this);
                 this.ActiveControl = Usuario;
             }
-
+            */
         }
 
         //Si presiona el boton cancelar, se cierra la pantalla "LoginConsultor" y se vuelve a la "PantallaPrincipal"
         private void Cancelar_Click(object sender, EventArgs e)
         {
-            pantallaPrincipal.Show();
+            
             Close();
         }
        

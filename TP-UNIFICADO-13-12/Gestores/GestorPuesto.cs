@@ -12,9 +12,9 @@ namespace Gestores
         //Declaracion de una instancia del administrador para poder hacerle consultas
         AdministradorBD admBD = new AdministradorBD(); 
 
-        public List<Puesto> listarPuestos(string codigo = null, string nombre = null, string empresa = null)
+        public List<Puesto> listarPuestos(string codigo = null, string nombreDePuesto = null, string empresa = null)
         {
-            ArrayList retornoBD = admBD.recuperarPuestos(codigo, nombre, empresa);
+            ArrayList retornoBD = admBD.recuperarPuestos(codigo, nombreDePuesto, empresa);
             List<Puesto> listaPuestos = new List<Puesto>();
 
             for (int i = 0; i <= retornoBD.Count ; i++)
@@ -26,9 +26,9 @@ namespace Gestores
             return listaPuestos;
         }
 
-        public void altaPuesto(string codigo, string nombre, string empresa, List<Caracteristica> caract, string descripcion = null)
+        public void altaPuesto(string codigo, string nombreDePuesto, string empresa, List<Caracteristica> caract, string descripcion = null)
         {
-            Puesto nuevoPuesto = new Puesto(codigo, nombre, empresa, descripcion);
+            Puesto nuevoPuesto = new Puesto(codigo, nombreDePuesto, empresa, descripcion);
             inicializarCaracteristicas(nuevoPuesto, caract);
             admBD.guardarPuesto(nuevoPuesto);
         }
@@ -42,9 +42,9 @@ namespace Gestores
             }
         }
 
-        public bool buscarPuesto(string codigo = null, string nombre = null)
+        public bool buscarPuesto(string codigo = null, string nombreDePuesto = null)
         {
-            bool retornoBD = admBD.existePuesto(codigo, nombre);
+            bool retornoBD = admBD.existePuesto(codigo, nombreDePuesto);
             return retornoBD;
         }
     }

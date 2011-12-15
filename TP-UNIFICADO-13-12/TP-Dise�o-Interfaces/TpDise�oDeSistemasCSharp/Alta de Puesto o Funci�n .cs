@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Gestores;
+using Entidades;
+using System.Collections;
 
 namespace TpDiseñoCSharp
 {
@@ -26,6 +29,15 @@ namespace TpDiseñoCSharp
         List<Caracteristicas> CaractPuesto = new List<Caracteristicas>();
 
 
+
+        GestorCompetencias gestorCompetencias = new GestorCompetencias();
+
+        List<Competencia> listaDeCompetencias = new List<Competencia>();
+
+
+        ArrayList listaNombresDeCompetencia = new ArrayList();
+
+        int mayor=0;
         /*
          * ===================================================
          * INICIALIZA LA PANTALLA DE ALTA DE PUESTO O FUNCION
@@ -36,6 +48,20 @@ namespace TpDiseñoCSharp
             ventanaAnterior= gestPuesto;
             InitializeComponent();
             this.Consultor.Text = User;
+            listaDeCompetencias = gestorCompetencias.listarCompetencias();
+
+            
+
+            for (int i = 0; i < listaDeCompetencias.Count; i++)
+            {
+                
+                listaNombresDeCompetencia.Add(listaDeCompetencias[i].Nombre);
+
+                if (mayor < listaDeCompetencias[i].Nombre.Length)
+                {
+                    mayor = listaDeCompetencias[i].Nombre.Length;
+                }
+            }
         }
 
 
@@ -45,13 +71,16 @@ namespace TpDiseñoCSharp
          * BOX EN LA PANTALLA ALTA DE PUESTO O FUNCION
          * ==================================================
          */
-        private void agregarTextBox(int i)
+        private void agregarComboBox(int i)
         {
             Caracteristicas Elemento;
 
             //Crea los nuevos text boxs
-            TextBox Comp = new TextBox();
-            TextBox Pond = new TextBox();
+            ComboBox Comp = new ComboBox();
+            ComboBox Pond = new ComboBox();
+
+            Comp.Width = (mayor)*8;
+            Comp.DataSource = listaNombresDeCompetencia;
 
             //Inicializa cada miembro de elemento con el text box correspondiente
             Elemento.Competencia = Comp;
@@ -65,8 +94,8 @@ namespace TpDiseñoCSharp
             Pond.Location = new Point(Comp.Width + 50, Comp.Top);
 
             //Agrega los text boxes al panel que se encuentra en "Alta de Puesto o Funcion"
-            panelCaracteristicas.Controls.Add((TextBox)Elemento.Competencia);
-            panelCaracteristicas.Controls.Add((TextBox)Elemento.Ponderacion);
+            panelCaracteristicas.Controls.Add((ComboBox)Elemento.Competencia);
+            panelCaracteristicas.Controls.Add((ComboBox)Elemento.Ponderacion);
         }
 
 
@@ -80,8 +109,8 @@ namespace TpDiseñoCSharp
         private void eliminarTextBox()
         {
             //Se eliminan los text box puestos en el panel de la pantalla
-            panelCaracteristicas.Controls.Remove((TextBox)CaractPuesto[i - 1].Competencia);
-            panelCaracteristicas.Controls.Remove((TextBox)CaractPuesto[i - 1].Ponderacion);
+            panelCaracteristicas.Controls.Remove((ComboBox)CaractPuesto[i - 1].Competencia);
+            panelCaracteristicas.Controls.Remove((ComboBox)CaractPuesto[i - 1].Ponderacion);
 
             //Elimina la caracteristica que se agrego a puesto
             CaractPuesto.Remove(CaractPuesto[i - 1]);
@@ -96,7 +125,7 @@ namespace TpDiseñoCSharp
         */
         private void Agregar_Click(object sender, EventArgs e)
         {
-            agregarTextBox(i);
+            agregarComboBox(i);
             i++;
         }
 

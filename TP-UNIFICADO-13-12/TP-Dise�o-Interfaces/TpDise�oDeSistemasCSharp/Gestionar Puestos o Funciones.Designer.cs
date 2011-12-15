@@ -40,10 +40,10 @@
             this.Consultor = new System.Windows.Forms.Label();
             this.CerrarSesion = new System.Windows.Forms.LinkLabel();
             this.DatosParaBusqueda = new System.Windows.Forms.GroupBox();
-            this.Buscar = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BuscarPuestos = new System.Windows.Forms.Button();
+            this.Empresa = new System.Windows.Forms.TextBox();
+            this.NombreDePuesto = new System.Windows.Forms.TextBox();
+            this.Codigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -180,10 +180,10 @@
             // DatosParaBusqueda
             // 
             this.DatosParaBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DatosParaBusqueda.Controls.Add(this.Buscar);
-            this.DatosParaBusqueda.Controls.Add(this.textBox3);
-            this.DatosParaBusqueda.Controls.Add(this.textBox2);
-            this.DatosParaBusqueda.Controls.Add(this.textBox1);
+            this.DatosParaBusqueda.Controls.Add(this.BuscarPuestos);
+            this.DatosParaBusqueda.Controls.Add(this.Empresa);
+            this.DatosParaBusqueda.Controls.Add(this.NombreDePuesto);
+            this.DatosParaBusqueda.Controls.Add(this.Codigo);
             this.DatosParaBusqueda.Controls.Add(this.label3);
             this.DatosParaBusqueda.Controls.Add(this.label2);
             this.DatosParaBusqueda.Controls.Add(this.label1);
@@ -195,39 +195,39 @@
             this.DatosParaBusqueda.TabStop = false;
             this.DatosParaBusqueda.Text = "Ingrese los datos para realizar una búsqueda";
             // 
-            // Buscar
+            // BuscarPuestos
             // 
-            this.Buscar.Location = new System.Drawing.Point(261, 166);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(75, 23);
-            this.Buscar.TabIndex = 6;
-            this.Buscar.Text = "Buscar";
-            this.Buscar.UseVisualStyleBackColor = true;
-            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
+            this.BuscarPuestos.Location = new System.Drawing.Point(261, 166);
+            this.BuscarPuestos.Name = "BuscarPuestos";
+            this.BuscarPuestos.Size = new System.Drawing.Size(75, 23);
+            this.BuscarPuestos.TabIndex = 6;
+            this.BuscarPuestos.Text = "Buscar";
+            this.BuscarPuestos.UseVisualStyleBackColor = true;
+            this.BuscarPuestos.Click += new System.EventHandler(this.BuscarPuesots_Click);
             // 
-            // textBox3
+            // Empresa
             // 
-            this.textBox3.Location = new System.Drawing.Point(223, 120);
-            this.textBox3.MaxLength = 20;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
-            this.textBox3.TabIndex = 5;
+            this.Empresa.Location = new System.Drawing.Point(223, 120);
+            this.Empresa.MaxLength = 20;
+            this.Empresa.Name = "Empresa";
+            this.Empresa.Size = new System.Drawing.Size(143, 20);
+            this.Empresa.TabIndex = 5;
             // 
-            // textBox2
+            // NombreDePuesto
             // 
-            this.textBox2.Location = new System.Drawing.Point(223, 75);
-            this.textBox2.MaxLength = 20;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
-            this.textBox2.TabIndex = 4;
+            this.NombreDePuesto.Location = new System.Drawing.Point(223, 75);
+            this.NombreDePuesto.MaxLength = 20;
+            this.NombreDePuesto.Name = "NombreDePuesto";
+            this.NombreDePuesto.Size = new System.Drawing.Size(143, 20);
+            this.NombreDePuesto.TabIndex = 4;
             // 
-            // textBox1
+            // Codigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(223, 34);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 3;
+            this.Codigo.Location = new System.Drawing.Point(223, 34);
+            this.Codigo.MaxLength = 20;
+            this.Codigo.Name = "Codigo";
+            this.Codigo.Size = new System.Drawing.Size(143, 20);
+            this.Codigo.TabIndex = 3;
             // 
             // label3
             // 
@@ -276,6 +276,7 @@
             this.Eliminar.TabIndex = 2;
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // Modificar
             // 
@@ -289,9 +290,12 @@
             // 
             // listaDePuesto
             // 
+            this.listaDePuesto.AllowUserToAddRows = false;
+            this.listaDePuesto.AllowUserToDeleteRows = false;
             this.listaDePuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.listaDePuesto.Location = new System.Drawing.Point(83, 41);
             this.listaDePuesto.Name = "listaDePuesto";
+            this.listaDePuesto.ReadOnly = true;
             this.listaDePuesto.Size = new System.Drawing.Size(320, 294);
             this.listaDePuesto.TabIndex = 0;
             this.listaDePuesto.Visible = false;
@@ -338,10 +342,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button Buscar;
+        private System.Windows.Forms.TextBox Empresa;
+        private System.Windows.Forms.TextBox NombreDePuesto;
+        private System.Windows.Forms.TextBox Codigo;
+        private System.Windows.Forms.Button BuscarPuestos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView listaDePuesto;
         private System.Windows.Forms.Button Eliminar;

@@ -35,11 +35,11 @@
             this.PanelInferior = new System.Windows.Forms.Panel();
             this.Fecha = new System.Windows.Forms.LinkLabel();
             this.SeleccionDeAcceso = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.Codigo = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Quitar = new System.Windows.Forms.Button();
-            this.Agregar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.labelPond = new System.Windows.Forms.Label();
+            this.labelComp = new System.Windows.Forms.Label();
             this.panelCaracteristicas = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.Empresa = new System.Windows.Forms.TextBox();
@@ -125,11 +125,11 @@
             // SeleccionDeAcceso
             // 
             this.SeleccionDeAcceso.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SeleccionDeAcceso.Controls.Add(this.button1);
             this.SeleccionDeAcceso.Controls.Add(this.Codigo);
-            this.SeleccionDeAcceso.Controls.Add(this.label7);
-            this.SeleccionDeAcceso.Controls.Add(this.label6);
-            this.SeleccionDeAcceso.Controls.Add(this.Quitar);
-            this.SeleccionDeAcceso.Controls.Add(this.Agregar);
+            this.SeleccionDeAcceso.Controls.Add(this.button2);
+            this.SeleccionDeAcceso.Controls.Add(this.labelPond);
+            this.SeleccionDeAcceso.Controls.Add(this.labelComp);
             this.SeleccionDeAcceso.Controls.Add(this.panelCaracteristicas);
             this.SeleccionDeAcceso.Controls.Add(this.label5);
             this.SeleccionDeAcceso.Controls.Add(this.Empresa);
@@ -148,6 +148,17 @@
             this.SeleccionDeAcceso.Text = "Realice las modificaciones a los campos y luego presione aceptar para guardar los" +
                 " cambios";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(363, 330);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(37, 33);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "-";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Codigo
             // 
             this.Codigo.AutoSize = true;
@@ -157,41 +168,34 @@
             this.Codigo.TabIndex = 14;
             this.Codigo.Text = "Aca va el codigo";
             // 
-            // label7
+            // button2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(177, 353);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Ponderacion";
+            this.button2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.Green;
+            this.button2.Location = new System.Drawing.Point(320, 330);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(37, 33);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "+";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // labelPond
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(71, 354);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Competencia";
+            this.labelPond.AutoSize = true;
+            this.labelPond.Location = new System.Drawing.Point(216, 354);
+            this.labelPond.Name = "labelPond";
+            this.labelPond.Size = new System.Drawing.Size(67, 13);
+            this.labelPond.TabIndex = 13;
+            this.labelPond.Text = "Ponderacion";
             // 
-            // Quitar
+            // labelComp
             // 
-            this.Quitar.Location = new System.Drawing.Point(343, 320);
-            this.Quitar.Name = "Quitar";
-            this.Quitar.Size = new System.Drawing.Size(27, 23);
-            this.Quitar.TabIndex = 11;
-            this.Quitar.Text = "-";
-            this.Quitar.UseVisualStyleBackColor = true;
-            // 
-            // Agregar
-            // 
-            this.Agregar.Location = new System.Drawing.Point(310, 320);
-            this.Agregar.Name = "Agregar";
-            this.Agregar.Size = new System.Drawing.Size(27, 23);
-            this.Agregar.TabIndex = 10;
-            this.Agregar.Text = "+";
-            this.Agregar.UseVisualStyleBackColor = true;
+            this.labelComp.AutoSize = true;
+            this.labelComp.Location = new System.Drawing.Point(84, 354);
+            this.labelComp.Name = "labelComp";
+            this.labelComp.Size = new System.Drawing.Size(69, 13);
+            this.labelComp.TabIndex = 12;
+            this.labelComp.Text = "Competencia";
             // 
             // panelCaracteristicas
             // 
@@ -347,10 +351,8 @@
         private System.Windows.Forms.LinkLabel Fecha;
         private System.Windows.Forms.GroupBox SeleccionDeAcceso;
         private System.Windows.Forms.Label Codigo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button Quitar;
-        private System.Windows.Forms.Button Agregar;
+        private System.Windows.Forms.Label labelPond;
+        private System.Windows.Forms.Label labelComp;
         private System.Windows.Forms.Panel panelCaracteristicas;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Empresa;
@@ -364,5 +366,7 @@
         private System.Windows.Forms.Panel PanelSuperior;
         private System.Windows.Forms.Label Consultor;
         private System.Windows.Forms.LinkLabel CerrarSesion;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
