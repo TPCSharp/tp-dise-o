@@ -31,10 +31,11 @@ namespace TpDiseñoCSharp
          * INICIALIZA LA PANTALLA DE ALTA DE PUESTO O FUNCION
          * ==================================================
          */
-        public Alta_De_Puesto(Gestionar_Puestos gestPuesto)
+        public Alta_De_Puesto(string User, Gestionar_Puestos gestPuesto)
         {
             ventanaAnterior= gestPuesto;
             InitializeComponent();
+            this.Consultor.Text = User;
         }
 
 
@@ -60,7 +61,7 @@ namespace TpDiseñoCSharp
             CaractPuesto.Add(Elemento);
 
             //Inicializa las propiedades de los text boxes para ser mostrados de manera alineada
-            Comp.Location = new Point(30, (i * 30));
+            Comp.Location = new Point(labelComp.Height, (i * 30));
             Pond.Location = new Point(Comp.Width + 50, Comp.Top);
 
             //Agrega los text boxes al panel que se encuentra en "Alta de Puesto o Funcion"
@@ -125,7 +126,15 @@ namespace TpDiseñoCSharp
         */
         private void Cancelar_Click(object sender, EventArgs e)
         {
+
+            /*Segun especificacion al cerrarse la ventana alta puesto, 
+             * se tiene que cerrar la ventana de gestion de puesto y
+             * volver al menu principal del consultor*/
             ventanaAnterior.Close();
+            
+            
+            
+            //Se encarga de cerrar la ventana actual
             Close();
         }
     }

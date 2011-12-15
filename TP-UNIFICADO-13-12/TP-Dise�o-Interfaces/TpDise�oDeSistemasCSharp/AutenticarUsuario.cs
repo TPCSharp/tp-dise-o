@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace TpDiseñoCSharp
 {
-    public partial class PantallaPrincipal : Form
+    public partial class AutenticarUsuario : Form
     {
-        public PantallaPrincipal()
+        public AutenticarUsuario()
         {
             InitializeComponent();
         }
@@ -53,10 +53,8 @@ namespace TpDiseñoCSharp
 
         private void LoginConsultor_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            LoginConsultor logCons= new LoginConsultor(this);
+            LoginConsultor logCons= new LoginConsultor();
             logCons.ShowDialog();
-
         }
 
         private void LoginCandidato_Click(object sender, EventArgs e)

@@ -36,6 +36,9 @@
             this.Nuevo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PanelSuperior = new System.Windows.Forms.Panel();
+            this.menuConsultor = new System.Windows.Forms.Button();
+            this.Consultor = new System.Windows.Forms.Label();
+            this.CerrarSesion = new System.Windows.Forms.LinkLabel();
             this.DatosParaBusqueda = new System.Windows.Forms.GroupBox();
             this.Buscar = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -45,12 +48,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listaDePuesto = new System.Windows.Forms.DataGridView();
-            this.Modificar = new System.Windows.Forms.Button();
             this.Eliminar = new System.Windows.Forms.Button();
-            this.CerrarSesion = new System.Windows.Forms.LinkLabel();
-            this.Consultor = new System.Windows.Forms.Label();
-            this.menuConsultor = new System.Windows.Forms.Button();
+            this.Modificar = new System.Windows.Forms.Button();
+            this.listaDePuesto = new System.Windows.Forms.DataGridView();
             this.PanelInferior.SuspendLayout();
             this.SeleccionDeAcceso.SuspendLayout();
             this.PanelSuperior.SuspendLayout();
@@ -147,6 +147,36 @@
             this.PanelSuperior.Size = new System.Drawing.Size(795, 62);
             this.PanelSuperior.TabIndex = 6;
             // 
+            // menuConsultor
+            // 
+            this.menuConsultor.Location = new System.Drawing.Point(13, 28);
+            this.menuConsultor.Name = "menuConsultor";
+            this.menuConsultor.Size = new System.Drawing.Size(128, 23);
+            this.menuConsultor.TabIndex = 13;
+            this.menuConsultor.Text = "Volver al menú principal";
+            this.menuConsultor.UseVisualStyleBackColor = true;
+            // 
+            // Consultor
+            // 
+            this.Consultor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Consultor.AutoSize = true;
+            this.Consultor.Location = new System.Drawing.Point(633, 39);
+            this.Consultor.Name = "Consultor";
+            this.Consultor.Size = new System.Drawing.Size(51, 13);
+            this.Consultor.TabIndex = 12;
+            this.Consultor.Text = "Consultor";
+            // 
+            // CerrarSesion
+            // 
+            this.CerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CerrarSesion.AutoSize = true;
+            this.CerrarSesion.Location = new System.Drawing.Point(722, 39);
+            this.CerrarSesion.Name = "CerrarSesion";
+            this.CerrarSesion.Size = new System.Drawing.Size(70, 13);
+            this.CerrarSesion.TabIndex = 2;
+            this.CerrarSesion.TabStop = true;
+            this.CerrarSesion.Text = "Cerrar Sesión";
+            // 
             // DatosParaBusqueda
             // 
             this.DatosParaBusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -238,24 +268,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultados de la búsqueda";
             // 
-            // listaDePuesto
-            // 
-            this.listaDePuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listaDePuesto.Location = new System.Drawing.Point(83, 41);
-            this.listaDePuesto.Name = "listaDePuesto";
-            this.listaDePuesto.Size = new System.Drawing.Size(320, 294);
-            this.listaDePuesto.TabIndex = 0;
-            this.listaDePuesto.Visible = false;
-            // 
-            // Modificar
-            // 
-            this.Modificar.Location = new System.Drawing.Point(444, 148);
-            this.Modificar.Name = "Modificar";
-            this.Modificar.Size = new System.Drawing.Size(75, 23);
-            this.Modificar.TabIndex = 1;
-            this.Modificar.Text = "Modificar";
-            this.Modificar.UseVisualStyleBackColor = true;
-            // 
             // Eliminar
             // 
             this.Eliminar.Location = new System.Drawing.Point(444, 222);
@@ -265,35 +277,24 @@
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.UseVisualStyleBackColor = true;
             // 
-            // CerrarSesion
+            // Modificar
             // 
-            this.CerrarSesion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CerrarSesion.AutoSize = true;
-            this.CerrarSesion.Location = new System.Drawing.Point(722, 39);
-            this.CerrarSesion.Name = "CerrarSesion";
-            this.CerrarSesion.Size = new System.Drawing.Size(70, 13);
-            this.CerrarSesion.TabIndex = 2;
-            this.CerrarSesion.TabStop = true;
-            this.CerrarSesion.Text = "Cerrar Sesión";
+            this.Modificar.Location = new System.Drawing.Point(444, 148);
+            this.Modificar.Name = "Modificar";
+            this.Modificar.Size = new System.Drawing.Size(75, 23);
+            this.Modificar.TabIndex = 1;
+            this.Modificar.Text = "Modificar";
+            this.Modificar.UseVisualStyleBackColor = true;
+            this.Modificar.Click += new System.EventHandler(this.Modificar_Click);
             // 
-            // Consultor
+            // listaDePuesto
             // 
-            this.Consultor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Consultor.AutoSize = true;
-            this.Consultor.Location = new System.Drawing.Point(633, 39);
-            this.Consultor.Name = "Consultor";
-            this.Consultor.Size = new System.Drawing.Size(51, 13);
-            this.Consultor.TabIndex = 12;
-            this.Consultor.Text = "Consultor";
-            // 
-            // menuConsultor
-            // 
-            this.menuConsultor.Location = new System.Drawing.Point(13, 28);
-            this.menuConsultor.Name = "menuConsultor";
-            this.menuConsultor.Size = new System.Drawing.Size(128, 23);
-            this.menuConsultor.TabIndex = 13;
-            this.menuConsultor.Text = "Volver al menú principal";
-            this.menuConsultor.UseVisualStyleBackColor = true;
+            this.listaDePuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listaDePuesto.Location = new System.Drawing.Point(83, 41);
+            this.listaDePuesto.Name = "listaDePuesto";
+            this.listaDePuesto.Size = new System.Drawing.Size(320, 294);
+            this.listaDePuesto.TabIndex = 0;
+            this.listaDePuesto.Visible = false;
             // 
             // Gestionar_Puestos
             // 

@@ -11,14 +11,15 @@ namespace TpDiseñoCSharp
 {
     public partial class Gestionar_Puestos : Form
     {
-        public Gestionar_Puestos()
+        public Gestionar_Puestos(string user)
         {
             InitializeComponent();
+            this.Consultor.Text = user;
         }
 
         private void Nuevo_Click(object sender, EventArgs e)
         {
-            Alta_De_Puesto altaPuesto = new Alta_De_Puesto(this);
+            Alta_De_Puesto altaPuesto = new Alta_De_Puesto(this.Consultor.Text, this);
             altaPuesto.ShowDialog();
         }
 
@@ -32,6 +33,12 @@ namespace TpDiseñoCSharp
 
             listaDePuesto.Visible = true;
             
+        }
+
+        private void Modificar_Click(object sender, EventArgs e)
+        {
+            Modificar_Puesto_o_Funcion modificarPuesto = new Modificar_Puesto_o_Funcion(this.Consultor.Text, this);
+            modificarPuesto.ShowDialog();
         }
     }
 }

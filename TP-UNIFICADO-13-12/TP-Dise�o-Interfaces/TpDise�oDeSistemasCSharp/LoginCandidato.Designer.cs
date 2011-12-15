@@ -36,7 +36,7 @@
             this.Entrar = new System.Windows.Forms.Button();
             this.Clave = new System.Windows.Forms.TextBox();
             this.NroDoc = new System.Windows.Forms.TextBox();
-            this.comboBoxTipoDNI = new System.Windows.Forms.ComboBox();
+            this.Tipo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -95,7 +95,7 @@
             this.SeleccionDeAcceso.Controls.Add(this.Entrar);
             this.SeleccionDeAcceso.Controls.Add(this.Clave);
             this.SeleccionDeAcceso.Controls.Add(this.NroDoc);
-            this.SeleccionDeAcceso.Controls.Add(this.comboBoxTipoDNI);
+            this.SeleccionDeAcceso.Controls.Add(this.Tipo);
             this.SeleccionDeAcceso.Controls.Add(this.label3);
             this.SeleccionDeAcceso.Controls.Add(this.label2);
             this.SeleccionDeAcceso.Controls.Add(this.label1);
@@ -146,19 +146,20 @@
             this.NroDoc.Size = new System.Drawing.Size(126, 20);
             this.NroDoc.TabIndex = 4;
             // 
-            // comboBoxTipoDNI
+            // Tipo
             // 
-            this.comboBoxTipoDNI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTipoDNI.FormattingEnabled = true;
-            this.comboBoxTipoDNI.Items.AddRange(new object[] {
+            this.Tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Tipo.FormattingEnabled = true;
+            this.Tipo.Items.AddRange(new object[] {
             "DNI",
             "LE",
             "LC",
             "PP"});
-            this.comboBoxTipoDNI.Location = new System.Drawing.Point(84, 50);
-            this.comboBoxTipoDNI.Name = "comboBoxTipoDNI";
-            this.comboBoxTipoDNI.Size = new System.Drawing.Size(57, 21);
-            this.comboBoxTipoDNI.TabIndex = 3;
+            this.Tipo.Location = new System.Drawing.Point(84, 50);
+            this.Tipo.MaxDropDownItems = 4;
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Size = new System.Drawing.Size(57, 21);
+            this.Tipo.TabIndex = 3;
             // 
             // label3
             // 
@@ -259,7 +260,7 @@
         private System.Windows.Forms.GroupBox SeleccionDeAcceso;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PanelSuperior;
-        private System.Windows.Forms.ComboBox comboBoxTipoDNI;
+        private System.Windows.Forms.ComboBox Tipo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

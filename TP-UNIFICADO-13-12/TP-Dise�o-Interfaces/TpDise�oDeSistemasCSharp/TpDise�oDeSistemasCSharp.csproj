@@ -34,11 +34,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Gestores">
-      <HintPath>..\..\Gestores\bin\Debug\Gestores.dll</HintPath>
+    <Reference Include="Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Entidades\bin\Debug\Entidades.dll</HintPath>
     </Reference>
+    <Reference Include="Gestores">
+      <HintPath>..\Gestores\bin\Debug\Gestores.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +55,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Validacion">
+      <HintPath>..\..\Validacion\Validacion\bin\Debug\Validacion.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alta de Puesto o Función .cs">
@@ -54,6 +65,30 @@
     </Compile>
     <Compile Include="Alta de Puesto o Función .Designer.cs">
       <DependentUpon>Alta de Puesto o Función .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Completar Cuestionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Completar Cuestionario.Designer.cs">
+      <DependentUpon>Completar Cuestionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluar Candidatos - Ventana 3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluar Candidatos - Ventana 3.Designer.cs">
+      <DependentUpon>Evaluar Candidatos - Ventana 3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Puesto o Funcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Puesto o Funcion.Designer.cs">
+      <DependentUpon>Modificar Puesto o Funcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenDeMerito-VistaImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenDeMerito-VistaImpresion.Designer.cs">
+      <DependentUpon>OrdenDeMerito-VistaImpresion.cs</DependentUpon>
     </Compile>
     <Compile Include="PantallaPrincipal.cs">
       <SubType>Form</SubType>
@@ -84,12 +119,6 @@
     </Compile>
     <Compile Include="Evaluar Candidatos - Ventana 2.Designer.cs">
       <DependentUpon>Evaluar Candidatos - Ventana 2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="GenerarTextBoxsDinamicos.cs">
       <SubType>Form</SubType>
@@ -138,6 +167,18 @@
     <EmbeddedResource Include="Alta de Puesto o Función .resx">
       <DependentUpon>Alta de Puesto o Función .cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Completar Cuestionario.resx">
+      <DependentUpon>Completar Cuestionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluar Candidatos - Ventana 3.resx">
+      <DependentUpon>Evaluar Candidatos - Ventana 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Puesto o Funcion.resx">
+      <DependentUpon>Modificar Puesto o Funcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenDeMerito-VistaImpresion.resx">
+      <DependentUpon>OrdenDeMerito-VistaImpresion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PantallaPrincipal.resx">
       <DependentUpon>PantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Evaluar Candidatos - Ventana 2.resx">
       <DependentUpon>Evaluar Candidatos - Ventana 2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GenerarTextBoxsDinamicos.resx">
       <DependentUpon>GenerarTextBoxsDinamicos.cs</DependentUpon>

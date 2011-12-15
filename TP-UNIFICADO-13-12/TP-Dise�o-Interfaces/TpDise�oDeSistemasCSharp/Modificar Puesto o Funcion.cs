@@ -9,22 +9,21 @@ using System.Windows.Forms;
 
 namespace TpDiseñoCSharp
 {
-    public partial class Emitir_Orden_de_Mérito : Form
+    public partial class Modificar_Puesto_o_Funcion : Form
     {
-        public Emitir_Orden_de_Mérito(string user)
+        private Gestionar_Puestos ventanaAnterior; 
+        public Modificar_Puesto_o_Funcion(string User, Gestionar_Puestos gestPuesto)
         {
+            ventanaAnterior = gestPuesto;
             InitializeComponent();
-            this.Consultor.Text = user;
+            this.Consultor.Text = User;
+
         }
 
         private void Cancelar_Click(object sender, EventArgs e)
         {
+            ventanaAnterior.Close();
             Close();
-        }
-
-        private void Buscar_Click(object sender, EventArgs e)
-        {
-            ResultadosDeBusqueda.Visible = true;
         }
     }
 }

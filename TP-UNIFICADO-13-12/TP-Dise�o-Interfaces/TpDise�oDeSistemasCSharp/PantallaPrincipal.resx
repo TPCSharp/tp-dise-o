@@ -288,6 +288,54 @@
   <data name="SeleccionDeAcceso.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="&gt;&gt;LoginCandidato.Name" xml:space="preserve">
+    <value>LoginCandidato</value>
+  </data>
+  <data name="&gt;&gt;LoginCandidato.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginCandidato.Parent" xml:space="preserve">
+    <value>SeleccionDeAcceso</value>
+  </data>
+  <data name="&gt;&gt;LoginCandidato.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LoginConsultor.Name" xml:space="preserve">
+    <value>LoginConsultor</value>
+  </data>
+  <data name="&gt;&gt;LoginConsultor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginConsultor.Parent" xml:space="preserve">
+    <value>SeleccionDeAcceso</value>
+  </data>
+  <data name="&gt;&gt;LoginConsultor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="SeleccionDeAcceso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 103</value>
+  </data>
+  <data name="SeleccionDeAcceso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 241</value>
+  </data>
+  <data name="SeleccionDeAcceso.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="SeleccionDeAcceso.Text" xml:space="preserve">
+    <value>Seleccione el tipo de acceso</value>
+  </data>
+  <data name="&gt;&gt;SeleccionDeAcceso.Name" xml:space="preserve">
+    <value>SeleccionDeAcceso</value>
+  </data>
+  <data name="&gt;&gt;SeleccionDeAcceso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SeleccionDeAcceso.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SeleccionDeAcceso.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="LoginCandidato.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -341,30 +389,6 @@
   </data>
   <data name="&gt;&gt;LoginConsultor.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="SeleccionDeAcceso.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 103</value>
-  </data>
-  <data name="SeleccionDeAcceso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>402, 241</value>
-  </data>
-  <data name="SeleccionDeAcceso.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="SeleccionDeAcceso.Text" xml:space="preserve">
-    <value>Seleccione el tipo de acceso</value>
-  </data>
-  <data name="&gt;&gt;SeleccionDeAcceso.Name" xml:space="preserve">
-    <value>SeleccionDeAcceso</value>
-  </data>
-  <data name="&gt;&gt;SeleccionDeAcceso.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SeleccionDeAcceso.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;SeleccionDeAcceso.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
