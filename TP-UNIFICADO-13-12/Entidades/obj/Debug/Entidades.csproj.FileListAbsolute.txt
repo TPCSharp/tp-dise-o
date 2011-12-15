@@ -8,3 +8,8 @@ C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projec
 C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\obj\Debug\Entidades.dll
 C:\Documents and Settings\Administrador\Mis documentos\Visual Studio 2010\Projects\TP-Versionado\Entidades\obj\Debug\Entidades.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Entidades\bin\Debug\Entidades.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Entidades\bin\Debug\Entidades.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Entidades\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Entidades\obj\Debug\Entidades.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Entidades\obj\Debug\Entidades.pdb

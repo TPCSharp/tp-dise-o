@@ -12,3 +12,10 @@ C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\bin\Debug\Entidades.pdb
 C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\obj\Debug\Gestores.dll
 C:\Users\GRACIANA\Desktop\Gabby\TP-Versionado\Gestores\obj\Debug\Gestores.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\bin\Debug\Gestores.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\bin\Debug\Gestores.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\bin\Debug\Entidades.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\bin\Debug\Entidades.pdb
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\obj\Debug\Gestores.dll
+C:\Users\GRACIANA\Desktop\Gabby\TP-UNIFICADO-13-12\Gestores\obj\Debug\Gestores.pdb
