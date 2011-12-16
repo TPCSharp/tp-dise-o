@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpDiseñoDeSistemasCSharp", "TpDiseñoDeSistemasCSharp\TpDiseñoDeSistemasCSharp.csproj", "{FAE5AF2E-8FB2-44E6-8E58-B4FC8E2BDE95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpDisenioDeSistemasCSharp", "TpDiseñoDeSistemasCSharp\TpDisenioDeSistemasCSharp.csproj", "{FAE5AF2E-8FB2-44E6-8E58-B4FC8E2BDE95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

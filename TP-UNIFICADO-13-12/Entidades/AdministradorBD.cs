@@ -277,21 +277,45 @@ namespace Entidades
         public void guardarBloque(Bloque nuevoBloque) { }
 
         //Metodos de consulta de existencia de clases
-        public bool existePuesto(string codigo = null, string nombre = null)
+        public bool existePuesto(string codigo = null, string nombreDePuesto = null)
         {
-            bool seConecto;
+            bool conexionExitosa;
+            int bandera = 0;
+            string consultaSql = "SELECT * FROM puesto WHERE `codigo` = '" +codigo+ "' AND `nombreDePuesto` = '"
+                +nombreDePuesto+ "';";
 
-            seConecto = iniciarConexion();
+            conexionExitosa = iniciarConexion();
 
-            //aca va la magia del metodo
+            if (!conexionExitosa)
+                   return false;
+           
 
-            terminarConexion();
+            MySql.Data.MySqlClient.MySqlCommand comando;
 
+            comando = ObjConexion.CreateCommand();
 
-            return seConecto; //retorno de prueba
+            comando.CommandText = consultaSql;
+
+            MySqlDataReader reader = comando.ExecuteReader();
 
             
+
+            while (reader.Read())
+            {
+                string cod =reader["codigo"].ToString();
+                string nomPuesto = reader["nombreDePuesto"].ToString();
+                if ((codigo == cod) || (nombreDePuesto == nomPuesto))
+                {
+                    bandera = 1;
+                }       
+            }
+           
+            terminarConexion();
+            return true;
         }
+
+            
+   
 
         public int preguntasPorBloque()
         {
